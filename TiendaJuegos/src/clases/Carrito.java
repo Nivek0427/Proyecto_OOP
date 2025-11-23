@@ -15,7 +15,7 @@ public class Carrito {
         juegos.add(juego);
     }
 
-    // Devuelve la lista (si quieres evitar modificaciones desde afuera, devuelve copia)
+    // Devuelve la lista 
     public static List<Juego> getJuegos() {
         return juegos;
         // return new ArrayList<>(juegos);

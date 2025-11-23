@@ -32,17 +32,14 @@ public abstract class Juego implements OperacionesJuego {
         return this.precioStrategy;
     }
 
-    // Sobrecarga: precio normal
     // Sobrecarga: precio normal o strategy
 public double calcularPrecio() {
     if (precioStrategy != null) {
-        return precioStrategy.calcularPrecio(this);  // ✔ Correcto
+        return precioStrategy.calcularPrecio(this);
     }
     return precio;
 }
 
-
-    // Sobrecarga: con descuento directo
     public double calcularPrecio(double descuento) {
         return precio - (precio * descuento);
     }
